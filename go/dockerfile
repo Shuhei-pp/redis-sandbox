@@ -5,6 +5,6 @@ COPY ../go.mod ./
 RUN go mod download && go mod verify
 
 COPY . .
-RUN go build -v -o /usr/bin/app ./...
+RUN go build -v -o /usr/bin/app ./main.go
 
 CMD ["app"]
