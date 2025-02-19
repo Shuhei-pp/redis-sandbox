@@ -4,7 +4,6 @@ services:
     container_name: redis
     ports:
       - "6379:6379"
-    restart: always
     networks:
       - app_net
 
@@ -15,9 +14,6 @@ services:
       - "8080:8080"
     networks:
       - app_net
-    depends_on:
-      - redis
-    tty: true
 
 networks:
   app_net:
