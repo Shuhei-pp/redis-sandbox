@@ -28,7 +28,7 @@ func GetProductList(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	res, err := http.Get("https://advertiser-api.staging.pickka.jp/member/product?page=1&limit=100")
+	res, err := http.Get("google.com")
 	if err != nil {
 		http.Error(w, "Failed to fetch product list", http.StatusInternalServerError)
 		return
